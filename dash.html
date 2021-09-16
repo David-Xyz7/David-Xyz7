@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>David Xyz - Dashboard Menu</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<style>
+	body {);color:red;height:100%;overflow:hidden;} 
+body {
+    background: #333;
+    padding-left:0px;}
+.ap {
+position: fixed;
+right: 0;
+bottom:-22px;
+left: 0;
+height:60px;
+margin: auto;
+font-family: Arial, sans-serif;
+font-size: 10px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+text-align: center;
+font-size:  11px;
+background: #333;
+border-top: 2px solid #333;
+z-index: 9999;
+} 
+h3 {
+padding:15px; 
+
+} 
+{box-shadow: 
+0 0 200px 100px  rgba(0, 0, 0, .5);}  
+a{text-decoration:none}
+ 
+/*Text Bawah1*/  
+M-2010, #teks, #posisi, #dibawah, span {
+   
+  position: relative;
+  display: inline-block;
+}
+#M-2010, #teks, #posisi, #dibawah  {
+    position: absolute;
+    font-size: 12px;
+    margin: 2px
+}
+#M-2010, #teks div {
+    text-decoration: underline;
+    cursor: pointer
+}
+#teks, #posisi {
+    text-align: right;
+    right:  70px;
+}
+#teks, #dibawah {
+    text-align: left;
+    left:  70px;
+}
+ #dibawah, #posisi {
+    bottom:34px;
+}  
+aside {
+  background-color: #34495E;
+  display: inline-block;
+  height: 92vh;
+  position: fixed;
+  width: 25%;
+}
+aside header {
+  box-sizing: border-box;
+  background-color:green;
+  height:80px;
+  padding: 0 15px;
+}
+aside header img,
+aside header p {
+  display: inline-block;
+  vertical-align: middle;
+}
+aside header img {
+  border-radius: 50%;
+}
+aside header p {
+  font-size: 13px;
+  color: white;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+aside header > div {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+aside .profile-picture {
+  height: 55px;
+  width: 55px;
+}
+.side-navigation {
+  font-size: 14px;
+}
+.side-navigation a {
+  color: #92A1A2;
+  display: block;
+  padding: 15px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.side-navigation i.fa {
+  color: #92A1A2;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.side-navigation li.active a,
+.side-navigation li:hover a {
+  background-color:green;
+  color: #fff;
+border:3px solid #dad; 
+width:142px;
+height:15px;
+border-radius:13px;
+}
+.side-navigation li.active i,
+.side-navigation li:hover i {
+  color: #2DCC70;
+}
+main {
+  float: right;
+  vertical-align: top;
+  width: 75%;
+}
+.main-head {
+  *zoom: 1;
+  height: 80px;
+  border-bottom: 1px solid #92A1A2;
+  color: #92A1A2;
+  font-size: 20px;
+  padding: 0 20px;
+  position: relative;
+}
+.main-head:before,
+.main-head:after {
+  content: "";
+  display: table;
+}
+.main-head:after {
+  clear: both;
+}
+.main-head .icons {
+  float: left;
+  font-size: 21px;
+}
+.main-head .icons .fa {
+  position: relative;
+}
+.main-head .icons .fa + .fa {
+  margin-left: 20px;
+}
+.main-head .logo {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+.main-head .logo .fa {
+  color: #2DCC70;
+  font-size: 40px;
+}
+.main-head .icons,
+.main-head .search {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.search {
+  float: right;
+}
+.search input {
+  border: 0;
+  border-bottom: 1px solid transparent;
+  font-size: 13px;
+  margin-right: 10px;
+  outline: none;
+  padding-bottom: 3px;
+}
+.search input:hover,
+.search input:focus {
+  border-bottom: 1px solid #92A1A2;
+}
+.user-card {
+  display: inline-block;
+}
+.user-card figure {
+  display: inline-block;
+}
+.user-card figure img {
+  border-radius: 50%;
+  vertical-align: middle;
+  width: 150px;
+}
+.user-card .name {
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.user-card .user-role,
+.user-card .experience-points {
+  color: #92A1A2;
+  font-size: 16px;
+}
+.user-card .experience-points .fa {
+  display: inline-block;
+  margin-right: 8px;
+}
+.user-card .experience-points .fa:hover {
+  color: #92A1A2;
+  cursor: default;
+}
+.user-card .user-info {
+  display: inline-block;
+  margin-left: 15px;
+  vertical-align: middle;
+}
+.user-card .user-info span {
+  padding-right: 10px;
+}
+.user-card .user-info .fa-star {
+  font-size: 18px;
+  margin: 0 1px;
+  position: relative;
+  top: -1px;
+}
+.user-card .user-info .fa-star.on {
+  color: #E54239;
+}
+.user-card .user-info .fa-star.off {
+  color: #92A1A2;
+}
+.user-card .user-role {
+  margin: 9px 0;
+}
+.user-card .user-role a {
+  color: #59A4E8;
+  margin-left: 11px;
+  text-decoration: none;
+}
+.category-navigation {
+  border-bottom: 1px solid #92A1A2;
+  padding: 30px 30px 0;
+}
+.category-navigation a {
+  box-sizing: border-box;
+  color: #2B3A4F;
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 6px 0 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.category-navigation li {
+  display: inline-block;
+}
+.category-navigation li + li {
+  margin-left: 25px;
+}
+.category-navigation li.active a,
+.category-navigation li:hover a {
+  border-bottom: 4px solid #2DCC70;
+}
+.category-navigation.container {
+  padding-bottom: 0;
+  padding-top: 10px;
+}
+.card {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+.card li {
+  box-sizing: border-box;
+  color: #92A1A2;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 15px 16px;
+  position: relative;
+}
+.card li .icon {
+  position: absolute;
+  left: 10px;
+}
+.card li + li {
+  border-top: 1px solid #92A1A2;
+}
+.card li:before {
+  content: "";
+  height: 100%;
+  left: -1px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 4px;
+}
+.card li:hover {
+  background-color: #ECF0F1;
+  color: #2B3A4F;
+}
+.card li:hover:before {
+  opacity: 1;
+}
+.card .hidden-content {
+  border-top: 1px solid #92A1A2;
+}
+.card .phone-number {
+  border-top: 1px solid #92A1A2;
+  color: #2B3A4F;
+  font-size: 12px;
+  padding: 8px 15px;
+  text-align: right;
+}
+.card .phone-number .fa {
+  font-size: 12px;
+  margin-left: 5px;
+}
+.card .phone-number:before {
+  content: none;
+}
+.card .tabs {
+  position: relative;
+}
+.card .tabs li {
+  background: transparent;
+  border: 0;
+  border-radius: 3px 3px 0 0;
+  box-sizing: border-box;
+  color: #92A1A2;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 50%;
+}
+.card .tabs li span {
+  display: block;
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.card .tabs li.active {
+  background-color: white;
+  border: 1px solid #92A1A2;
+  border-bottom: 0;
+}
+.card + .card {
+  margin-left: 5%;
+}
+.card.green .content li:before {
+  background-color: #2DCC70;
+}
+.card.green .tabs li.active {
+  color: #2DCC70;
+}
+.card.orange .content li:before {
+  background-color: #E54239;
+}
+.card.orange .tabs li.active {
+  color: #E54239;
+}
+.card.purple .content li:before {
+  background-color: #8F40B3;
+}
+.card.purple .tabs li.active {
+  color: #8F40B3;
+}
+.content {
+  background-color: white;
+  border: 1px solid #92A1A2;
+  border-radius: 0 0 3px 3px;
+  box-sizing: border-box;
+  display: none;
+  margin-top: -1px;
+  overflow: hidden;
+}
+.content .has-icon li:not(.phone-number) {
+  padding: 15px 16px 15px 43px;
+}
+.content .fa {
+  font-size: 14px;
+  line-height: 0;
+  padding-right: 3px;
+}
+.content.visible {
+  display: block;
+}
+.card.card-full {
+  margin-left: 0;
+  margin-top: 5%;
+  width: 100%;
+}
+.card.card-full .content {
+  display: inline-block;
+  height: 280px;
+  margin-top: 0;
+  overflow: visible;
+}
+.card.card-full .content.activity {
+  border-radius: 0 0 3px 0;
+}
+.card.card-full .content.experience-data {
+  border-right: 0;
+  border-radius: 0 0 0 3px;
+}
+.data {
+  bottom: 0;
+  height: 100%;
+  left: 10px;
+  position: absolute;
+  text-align: center;
+  width: 25px;
+}
+.data .phone {
+  font-size: 10px;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.data .value {
+  background: #FF80FE;
+  bottom: 0;
+  display: inline-block;
+  height: 30.6px;
+  left: 0;
+  position: absolute;
+  width: 50%;
+}
+.data:before {
+  background-color: #000;
+  content: "";
+  bottom: 0;
+  position: absolute;
+  width: 50px;
+}
+.container {
+  background-color: #ECF0F1;
+  padding: 30px;
+}
+.container.user {
+  background-color: white;
+}
+h3 {
+  color: #92A1A2;
+  font-size: 15px;
+  margin: 0 0 15px;
+}
+.fa:not(.fa-star):hover {
+  color: #2DCC70;
+  cursor: pointer;
+}
+.number-alert {
+  background-color:#FF80FE;
+  border-radius: 65%;
+  box-sizing: border-box;
+  color: white;
+  display: inline-block;
+  font-family: "Tahoma";
+  font-size: 9px;
+  height: 15px;
+  padding: 3px 0;
+  position: absolute;
+  right: -25%;
+  text-align: center;
+  top: -25%;
+  width: 15px;
+}
+body {
+  color: #202020;
+  font-family: "Helvetica", "Open Sans", "Arial";
+  font-size: 0;
+}
+footer {
+  *zoom: 1;
+  bottom: 0;
+  padding: 0 15px;
+  position: fixed;
+  right: 0;
+  text-align: right;
+  width: 100%;
+}
+footer:before,
+footer:after {
+  content: "";
+  display: table;
+}
+footer:after {
+  clear: both;
+}
+footer .item {
+  display: inline-block;
+  color: #2B3A4F;
+  font-size: 10px;
+  text-decoration: none;
+  vertical-align: middle;
+}
+footer .item + .item {
+  margin-left: 10px;
+}
+footer .link {
+  width: 32px;
+}
+footer img {
+  width: 100%;
+}
+ul {
+  padding-left: 0;
+}
+li {
+  list-style: none;
+}
+p {
+  margin: 0;
+}
+body {margin:0;}
+.navbar {
+  overflow: hidden;
+  background-color:#34495E;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+	</style>
+		
+<body>
+<!-- partial:index.partial.html -->
+<div class="ap" id="ap">
+<div align="center">
+<div id="dibawah">
+<span style="font-family:arial;font-size:11px;color:#80C8FE;"> ZOOM GRAPH <a href="http://sule-entertainment.blogspot.co.id/p/graph-view.html"target="_blank" title="Mari Belajar"><span style="color: #FFFF00; font-size:11px;">&nbsp; ENTRI </a>&nbsp; PENAYANGAN </a> 
+</div>
+<div id="posisi">
+<span style="font-family: arial ; font-size:11px; color:#80C8FE;"> BLOGGER <a href="https://productforums.google.com/forum/#!home"target="_blank" title="Mari Belajar"><span style="color: #FFFF00; font-size: 11px;">&nbsp; GROUPS&nbsp; </a>&nbsp;FORUMS</a> 
+</div>
+
+<h3><div align="center" style="margin-top:-12px">
+ <audio id="player" preload="auto">
+  <source src="https://sites.google.com/site/sulescroll/lagu/Aerosmith-Amazing-M2010.mp3">
+  </source></h3>
+</a></div>
+</div>
+
+<div class="navbar">
+<hr style="height:15px;border-width:1px;color:#333;background-color:#333;">
+<aside>
+  <header>
+    <div><img class="profile-picture" src="https://sites.google.com/site/sulescroll/poto/Sule-M2010.png"/>
+      <p><span style="cursor:not-allowed"> Designed by : M2010</p> 
+<hr style="height:13px;border-width:1px;color:#333;background-color:#333;">
+    </div>
+  </header>
+  <nav class="side-navigation">
+    <ul>
+      <div id="bg">
+  <div class="center-image"><span style="cursor:wait">
+    <img src="https://sites.google.com/site/sule62001/sule2001code/W-M-2010.png"name="e902" border="0" width="308" height="209" /></a> 
+    <ul>
+ <li class="active">
+ <a href="#">
+<i class="fa fa-bars"style="font-size:27px;color:#fff"></i>
+<span style="cursor:help"></i>menu</a></li></div> 
+ </ul> 
+<ul><a href="http://sule-entertainment.blogspot.co.id/2017/03/mobil-motor.html"target="_blank" title="Mobil Motor">
+<i class="fa fa-car"style="font-size:21px;color:#fff"></i></i>animated car</a><ul>
+
+<ul><a href="http://sule-hiburan.blogspot.co.id/2017/03/kereta-cibeber.html"target="_blank" title="Mobil Motor">
+<i class="fa fa-train"style="font-size:25px;color:#dad"></i></i>animated Train</a><ul>
+
+<ul><a href="http://sule-lagu.blogspot.co.id/2017/01/cemetery-7-dragons-js.html"target="_blank" title="cemetery">
+<i class="fa fa-optin-monster" style="font-size:18px;color:#ggg"></i>animated dragon</a><ul>
+
+ <a href="http://sule-entertainment.blogspot.co.id/p/task-manager.html"target="_blank" title="Tugas">
+<i class="fa fa-bar-chart"style="font-size:21px;color:red"></i></i>animated bars graph</a><ul> 
+
+<ul><a href="https://sites.google.com/site/sulescroll/code/Dashboard-Menu-M2010.css"title="Download"><i class="fa fa-download"style="font-size:22px;color:#009999"></i>Download Kode D Menu</a><ul>
+
+<ul><a href="http://sample-mys2010.blogspot.co.id/2017/03/dashboard-menu.html"target="_blank" title="Visit Link"><i class="fa fa-pencil-square-o"style="font-size:22px;color:#809FFE"></i><span style="color:#809FFE;font-size:9pt">Design kode is edited by. M2010</a><ul>
+
+<ul><a href="https://www.digitalpoint.com/"target="_blank" title="Forums"><i class="fa fa-copyright"style="font-size:22px;color:#809FFE"></i><span style="color:#809FFE;font-size:9pt">Copyright @ 2017 Cibeber Cimahi</a><ul>
+</nav>
+</aside>
+<main>  
+  <header class="main-head">
+    <div class="icons"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+</i><i class="fa fa-comments-o"></i><i class="fa fa-bell-o"><span class="number-alert"style="font-size:12px;color:#111">4</span></i></div>
+ 
+<div class="icons">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-heart-o"style="font-size:20px;color:red"></i>
+<i class="fa fa-check-square-o"style="font-size:20px;color:red"></i>
+<i class="fa fa-hand-o-left"style="font-size:20px;color:red"></i></div>
+    <div class="logo"><i class="fa fa-audio-description"style="font-size:50px;color:red"></i></div>
+
+    <div class="search">
+      <input type="text" name="search" placeholder="tidak ada response ..." autocomplete="off"/>
+<i class="fa fa-search"></i>
+    </div>
+  </header>
+  <div class="container user">
+    <div class="user-card">
+      <figure><img src="https://1.bp.blogspot.com/-khnddCUfjIs/WMaWUsUyD4I/AAAAAAAAdfc/b8VWSZcpg-MzACi6hfjzmL4Z3IOC7k1-gCK4B/s1600/M2010.jpg"/></figure>
+      <div class="user-info">
+        <div class="name"> <span><i class="fa fa-share-alt"style="font-size:20px;color:red"></i></span>
+<i class="fa fa-star on"></i><i class="fa fa-star on"></i><i class="fa fa-star on"></i><i class="fa fa-star on"></i><i class="fa fa-star off"></i></div>
+        <div class="user-role"> subscribe : &nbsp; <i class="fa fa-rss"style="font-size:20px;color:red"></i>&nbsp;
+<i class="fa fa-spinner fa-spin"style="font-size:20px;color:red"></i>&nbsp;
+<i class="fa fa-download"style="font-size:20px;color:red"></i>
+<br><br>
+<span style="color:#222;font-size:10pt">
+<p>Mari belajar mengedit kode  Dashboard Menu,  download kode  Dashboard Menu, <br>edit sesuai keinginan Copy kode tersebut, terapkan pada entri halaman baru HTML Blog klik simpan selesai </a><ul>
+</div>
+      </div>
+    </div>
+  
+  <!-- main content-->
+  <hr style="height:37px;border-width:16px;color:#333;background-color:#f00">
+      
+    <div class="container">
+      <div class="card orange">
+        <ul class="tabs">
+          <li class="active" data-tab="1"><i class="fa fa-map-marker"style="font-size:48px;color:#809FFE"></i></span></li>
+          <li data-tab="2"><span>1</span>MAP</li>
+        </ul>
+        <div class="content visible" data-content="1">
+          <ul>
+            <li>P Menurut Negara </li>
+            <li>Indonesia </li>             
+              <li>Prancis</li>
+              <li>Amerika Serikat</li>
+              <li>Rusia </li>
+              <li>Denmark</li>
+            </ul>
+            <li class="phone-number" data-phone="phone number" data-more="phone number"><span><i class="fa fa-phone"style="font-size:28px;color:red"><span style="color:green;font-size:10pt">&nbsp;&nbsp;call : 2307</i></li>
+          </ul>
+        </div>
+        <div class="content" data-content="2">
+          <ul>
+            <li>Berikutnya</li>          
+            </ul>
+            <li class="phone-number" data-phone="phone number" data-more="phone number"><span><i class="fa fa-phone"style="font-size:28px;color:red"><span style="color:green;font-size:10pt">&nbsp;&nbsp;call : 2308</i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card purple">
+        <ul class="tabs">
+          <li class="active" data-tab="1"><span><i class="fa fa-bar-chart" style="font-size:38px;color:#4B0082"></i></span></li>
+          <li data-tab="4"><span>2</span>CHART</li>
+        </ul>
+        <div class="content visible" data-content="3">
+          <ul class="has-icon">
+            <li>
+              <div class="icon">
+<i class="fa fa-bar-chart" style="font-size:18px;color:#4B0082"></i><span>&nbsp;</span></div> Graph View
+            </li>
+            <li>
+             <div class="icon">
+<i class="fa fa-bar-chart"style="font-size:18px;color:red"></i><span>&nbsp;</span></div>Penayangan Entri
+            </li>             
+            <ul class="hidden-content">
+              <li>
+                 <div class="icon">
+<i class="fa fa-bar-chart"style="font-size:18px;color:red"></i><span>&nbsp;</span></div>Penayangan Entri
+            </li>
+              </li>
+              <li>
+                 <div class="icon">
+<i class="fa fa-bar-chart"style="font-size:18px;color:red"></i><span>&nbsp;</span></div>Penayangan Entri
+            </li>
+              </li>
+              <li>
+                 <div class="icon">
+<i class="fa fa-bar-chart"style="font-size:18px;color:red"></i><span>&nbsp;</span></div>Penayangan Entri
+            </li>
+              </li>
+              <li>
+                 <div class="icon">
+<i class="fa fa-bar-chart"style="font-size:18px;color:red"></i><span>&nbsp;</span></div>Penayangan Entri
+            </li>
+              </li>
+            </ul>
+           <li class="phone-number" data-phone="phone number" data-more="phone number"><span><i class="fa fa-phone"style="font-size:28px;color:red"><span style="color:green;font-size:10pt">&nbsp;&nbsp;2308</i></li>
+          </ul>
+        </div>
+        <div class="content" data-content="4">
+       
+            <li class="phone-number" data-phone="phone number" data-more="phone number"><span><i class="fa fa-phone"style="font-size:28px;color:red"><span style="color:green;font-size:10pt">&nbsp;&nbsp;2308</i></li>
+          </ul> </span>FILE</li>
+          <li data-tab="4"> 
+        </div>
+      </div>
+      <div class="card green">
+        <ul class="tabs">
+          <li class="active" data-tab="5"><span><i class="fa fa-flag"style="font-size:38px;color:silver"></i></span></li>
+          <li data-tab="6"><span>3</span>FLAG</li> 
+        </ul>
+        <div class="content visible" data-content="5">
+          <ul class="has-icon">
+            <li>
+              <div class="data" data-text="100%" data-value="100"><span class="value"></span><span class="bar"></span></div>Negara
+            </li>
+            <li>
+              <div class="data" data-text="83%" data-value="83"><span class="value"></span><span class="bar"></span></div>indonesia : 23
+            </li>
+            
+            <ul class="hidden-content">
+              <li>
+                <div class="data" data-text="100%" data-value="100"><span class="value"></span><span class="bar"></span></div>Prancis : 6
+              </li>
+              <li>
+                <div class="data" data-text="100%" data-value="100"><span class="value"></span><span class="bar"></span></div>Amerika Serikat : 6
+              </li>
+              <li>
+                <div class="data" data-text="100%" data-value="100"><span class="value"></span><span class="bar"></span></div>Rusia : 5
+              </li>
+              <li>
+                <div class="data" data-text="100%" data-value="100"><span class="value"></span><span class="bar"></span></div>Denmark : 1
+              </li>
+            </ul>
+            <li class="phone-number" data-phone="phone number" data-more="phone number"><span><i class="fa fa-signal"style="font-size:28px;color:red"><span style="color:green;font-size:10pt">&nbsp;&nbsp;signal </i></li>
+          </ul>
+        </div>
+        <div class="content" data-content="6">
+          
+            <li class="phone-number" data-phone="phone number" data-more="phone number"><span><i class="fa fa-phone"style="font-size:28px;color:red"><span style="color:green;font-size:10pt">&nbsp;&nbsp;2308</i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+  
+  
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>
+</script>     
+<script src="https://cdn.jsdelivr.net/mediaelement/2.13.1/mediaelement-and-player.min.js">
+</script>  
+<link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/mediaelement/2.13.1/mediaelementplayer.min.css'>                        
+<script src="https://sites.google.com/site/codesule/lagu/Musik-Mys2010.js"></script>  
+<script src='https://sites.google.com/site/codesule/lagu/stopExecutionOnTimeout-M2010.js'>
+</script>
+<dragon>  
+<script src='//assets.codepen.io/assets/common/stopExecutionOnTimeout.js?t=1'>
+</script>   
+<script src='https://sites.google.com/site/emanloveforplace/tempatlagu/7Dragon-M2010.js'>
+</script> 
+  
+  
+  <!--Yellow-->
+<div style="position:fixed;top: 90px;right:30px;width:100px;height:100px;">
+<a href="http://sule-entertainment.blogspot.co.id/2017/03/dashboard-menu.html" style="text-decoration:none" target="_blank" title="Menu M2010">
+<img border="0" src="https://1.bp.blogspot.com/-haEP0eJK-Qk/WMzUKIG2SoI/AAAAAAAAdh8/3LjOm0b23oES3aAZZQhXSDZRnSyXC0sgQCK4B/s1600/Yellow1-M2010.gif"title="Visit Link" />
+<font size="3" color="#222"face="agency fb"><p>
+FULL PAGE</p>
+</font></a></div>
+<!-- partial -->
+  <script  src="./script_.js"></script>
+
+</body>
+</html>
